@@ -19,7 +19,7 @@ const userInfos = [
     {
         name: 'wayne barnett',
         job: 'founder & ceo',
-        idPIc: 'wayne-barnett-founder-ceo.jpg'
+        idPic: 'wayne-barnett-founder-ceo.jpg',
 
 
     },
@@ -27,7 +27,7 @@ const userInfos = [
     {
         name: 'Angela Caroll',
         job: 'Chief Editor ',
-        idPIc: 'angela-caroll-chief-editor.jpg'
+        idPic: 'angela-caroll-chief-editor.jpg',
 
 
     },
@@ -35,7 +35,7 @@ const userInfos = [
     {
         name: 'Walter Gordon',
         job: 'Office Manager',
-        idPIc: 'walter-gordon-office-manager.jpg'
+        idPic: 'walter-gordon-office-manager.jpg',
 
 
     },
@@ -43,7 +43,7 @@ const userInfos = [
     {
         name: 'angela lopez',
         job: 'social media manager',
-        idPIc: 'angela-lopez-social-media-manager.jpg'
+        idPic: 'angela-lopez-social-media-manager.jpg',
 
 
     },
@@ -51,7 +51,7 @@ const userInfos = [
     {
         name: 'scott estrada',
         job: 'developer',
-        idPIc: 'scott-estrada-developer.jpg'
+        idPic: 'scott-estrada-developer.jpg',
 
 
     },
@@ -59,16 +59,25 @@ const userInfos = [
     {
         name: 'barbara ramos',
         job: 'graphic designer',
-        idPIc: 'barbara-ramos-graphic-designer.jpg '
+        idPic: 'barbara-ramos-graphic-designer.jpg ',
 
 
     }
 ]
 
-const info = document.getElementById('infoList')
+console.log(userInfos)
+const lista = document.getElementById('infoList')
+let userList = '';
 
-
-let infoList = ''
+for (let i = 0; i < userInfos.length; i++) 
+   
+{ userList += `<li>${userInfos[i].name}  ${userInfos[i].job}
+    ${userInfos[i].idPic} 
+    </li>`}
+    
+    
+    
+    lista.innerHTML = userList
 
 
 
