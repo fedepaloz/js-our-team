@@ -11,7 +11,7 @@ Organizzare i singoli membri in card/schede e ispirarci alle grafiche in allegat
 Consigli del giorno:
 Ragioniamo come sempre a step.
 Prima la logica in italiano e poi traduciamo in codice.
-E ricordiamoci che console.log() è nostro amico! */ 
+E ricordiamoci che console.log() è nostro amico! */
 
 
 
@@ -31,7 +31,7 @@ const userInfos = [
 
 
     },
-    
+
     {
         name: 'Walter Gordon',
         job: 'Office Manager',
@@ -47,7 +47,7 @@ const userInfos = [
 
 
     },
-    
+
     {
         name: 'scott estrada',
         job: 'developer',
@@ -55,7 +55,7 @@ const userInfos = [
 
 
     },
-    
+
     {
         name: 'barbara ramos',
         job: 'graphic designer',
@@ -65,5 +65,10 @@ const userInfos = [
     }
 ]
 
-console.log(userInfos)
+const info = document.getElementById('infoList')
+
+
+let infoList = ''
+
+
 
